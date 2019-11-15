@@ -215,14 +215,14 @@ namespace MiniCruise {
 	//% blockId=cruise_rgb block="Set LED %RgbValue| Colour %ColorValue"
     //% weight=59
     export function setRGB(RgbValue: RgbList, ColorValue:ColorList): void {
-        if(ColorValue == ColorList.red){
-            if(RgbValue == RgbList.rgb){
-                neoStrip.showColor(neopixel.colors(NeoPixelColors.Red));
-            }else{
-                neoStrip.setPixelColor(RgbValue, neopixel.colors(NeoPixelColors.Red));
-            }
-            
-        }
+        //if(ColorValue == ColorList.red){
+        //    if(RgbValue == RgbList.rgb){
+        //        neoStrip.showColor(neopixel.colors(NeoPixelColors.Red));
+        //    }else{
+        //        neoStrip.setPixelColor(RgbValue, neopixel.colors(NeoPixelColors.Red));
+        //    }
+        //    
+        //}
         if(ColorValue == ColorList.orange){
             if(RgbValue == RgbList.rgb){
                 neoStrip.showColor(neopixel.colors(NeoPixelColors.Orange));
