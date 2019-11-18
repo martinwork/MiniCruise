@@ -214,18 +214,6 @@ namespace MiniCruise {
             } else {
                 return false;
             }
-        } else if (IRDire == IRList.left) {
-            if (pins.digitalReadPin(DigitalPin.P8) == 0) {
-                return true;
-            } else {
-                return false;
-            }
-        } else if (IRDire == IRList.right) {
-            if (pins.digitalReadPin(DigitalPin.P2) == 0) {
-                return true;
-            } else {
-                return false;
-            }
         } else {
             return false;
         }
