@@ -1,9 +1,9 @@
 {
     "target": "microbit",
-    "targetVersion": "2.1.26",
+    "targetVersion": "1.0.0",
     "name": "MiniCruise",
     "meta": {},
-    "editor": "tsprj",
+    "editor": "blocksprj",
     "pubId": "",
     "pubCurrent": false,
     "_rev": null,
@@ -14,7 +14,7 @@
     "blobVersion": null,
     "blobCurrent": false,
     "isDeleted": false,
-    "path": "MiniCruise",
+    "path": "MiniCruise-master",
     "githubCurrent": false,
     "saveId": null
 }
