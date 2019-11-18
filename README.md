@@ -26,7 +26,6 @@ To edit this repository in MakeCode.
 ## Supported targets
 
 * for PXT/microbit
-* for PXT/microbit
 (The metadata above is needed for package search.)
 
 # MiniCruise Package for Microsoft PXT

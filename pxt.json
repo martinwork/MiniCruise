@@ -6,6 +6,8 @@
         "core": "*",
         "neopixel": "github:microsoft/pxt-neopixel#v0.6.12"
     },
+    "license": "MIT",
+    "icon": "icon.png",
     "files": [
         "README.md",
         "main.ts"
@@ -13,7 +15,5 @@
     "testFiles": [
         "test.ts"
     ],
-    "public": true,
-    "preferredEditor": "tsprj",
-    "license": "MIT"
+    "public": true
 }
