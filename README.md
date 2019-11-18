@@ -21,15 +21,13 @@ To edit this repository in MakeCode.
 
 ## Blocks preview
 
-![A rendered view of the blocks](https://raw.github.com//blob/master/.makecode/blocks.png)
+![A rendered view of the blocks](https://repository-images.githubusercontent.com/221861047/35f0dc80-09f0-11ea-9d44-3204b2a77aca)
 
 ## Supported targets
 
 * for PXT/microbit
 * for PXT/microbit
 (The metadata above is needed for package search.)
-
-///////////////////
 
 # MiniCruise Package for Microsoft PXT
 
