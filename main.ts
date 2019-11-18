@@ -39,11 +39,7 @@ enum PingUnit {
 }
 enum IRList {
     //% block="FRONT"
-    front = 1,
-    //% block="LEFT"
-    right = 2,
-    //% block="RIGHT"
-    left = 3
+    front = 1
 }
 enum RgbList {
     //% block="ALL"
