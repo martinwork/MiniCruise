@@ -67,21 +67,21 @@ enum ColorList {
     //% block="RED"
     red = -1,
     //% block="ORANGE"
-    orange = 10,
+    orange = 2,
     //% block="YELLOW"
-    yellow = 11,
+    yellow = 3,
     //% block="GREEN"
-    green = 12,
+    green = 4,
     //% block="BLUE"
-    blue = 13,
+    blue = 5,
     //% block="INDIGO"
-    indigo = 14,
+    indigo = 6,
     //% block="VIOLET"
-    violet = 15,
+    violet = 7,
     //% block="PURPLE"
-    purple = 16,
+    purple = 8,
     //% block="WHITE"
-    white = 17,
+    white = 9,
     //% block="BLOCK"
     black = 1
 }
@@ -223,78 +223,79 @@ namespace MiniCruise {
 	*/
     //% blockId="mini_cruise_rgb" block="Set LED %RgbValue| Colour %ColorValue"
     //% weight=59
-    export function setRGB(RgbValue: RgbList, ColorValue: ColorList): void {
-        if (ColorValue == ColorList.red) {
-            if (RgbValue == RgbList.rgb) {
+    export function setRGB(RgbValue: RgbList, ColorValue:ColorList): void {    
+        if(ColorValue == ColorList.red){
+            if(RgbValue == RgbList.rgb){
                 neoStrip.showColor(neopixel.colors(NeoPixelColors.Red));
-            } else {
+            }else{
                 neoStrip.setPixelColor(RgbValue, neopixel.colors(NeoPixelColors.Red));
             }
-        }
-        if (ColorValue == ColorList.orange) {
-            if (RgbValue == RgbList.rgb) {
-                neoStrip.showColor(neopixel.colors(NeoPixelColors.Red));
-            } else {
-                neoStrip.setPixelColor(RgbValue, neopixel.colors(NeoPixelColors.Red));
+            
+        }     
+        if(ColorValue == ColorList.orange){
+            if(RgbValue == RgbList.rgb){
+                neoStrip.showColor(neopixel.colors(NeoPixelColors.Orange));
+            }else{
+                neoStrip.setPixelColor(RgbValue, neopixel.colors(NeoPixelColors.Orange));
+            }
+        }     
+        if(ColorValue == ColorList.yellow){
+            if(RgbValue == RgbList.rgb){
+                neoStrip.showColor(neopixel.colors(NeoPixelColors.Yellow));
+            }else{
+                neoStrip.setPixelColor(RgbValue, neopixel.colors(NeoPixelColors.Yellow));
+            }
+        }     
+        if(ColorValue == ColorList.green){
+            if(RgbValue == RgbList.rgb){
+                neoStrip.showColor(neopixel.colors(NeoPixelColors.Green));
+            }else{
+                neoStrip.setPixelColor(RgbValue, neopixel.colors(NeoPixelColors.Green));
+            }
+        }      
+        if(ColorValue == ColorList.blue){
+            if(RgbValue == RgbList.rgb){
+                neoStrip.showColor(neopixel.colors(NeoPixelColors.Blue));
+            }else{
+                neoStrip.setPixelColor(RgbValue, neopixel.colors(NeoPixelColors.Blue));
+            }
+        }   
+        if(ColorValue == ColorList.indigo){
+            if(RgbValue == RgbList.rgb){
+                neoStrip.showColor(neopixel.colors(NeoPixelColors.Indigo));
+            }else{
+                neoStrip.setPixelColor(RgbValue, neopixel.colors(NeoPixelColors.Indigo));
+            }
+        }    
+        if(ColorValue == ColorList.violet){
+            if(RgbValue == RgbList.rgb){
+                neoStrip.showColor(neopixel.colors(NeoPixelColors.Violet));
+            }else{
+                neoStrip.setPixelColor(RgbValue, neopixel.colors(NeoPixelColors.Violet));
+            }
+        }   
+        if(ColorValue == ColorList.purple){
+            if(RgbValue == RgbList.rgb){
+                neoStrip.showColor(neopixel.colors(NeoPixelColors.Purple));
+            }else{
+                neoStrip.setPixelColor(RgbValue, neopixel.colors(NeoPixelColors.Purple));
+            }
+        }       
+        if(ColorValue == ColorList.white){
+            if(RgbValue == RgbList.rgb){
+                neoStrip.showColor(neopixel.colors(NeoPixelColors.White));
+            }else{
+                neoStrip.setPixelColor(RgbValue, neopixel.colors(NeoPixelColors.White));
+            }
+        }    
+        if(ColorValue == ColorList.black){
+            if(RgbValue == RgbList.rgb){
+                neoStrip.showColor(neopixel.colors(NeoPixelColors.Black));
+            }else{
+                neoStrip.setPixelColor(RgbValue, neopixel.colors(NeoPixelColors.Black));
             }
         }
-        if (ColorValue == ColorList.yellow) {
-            if (RgbValue == RgbList.rgb) {
-                neoStrip.showColor(neopixel.colors(NeoPixelColors.Red));
-            } else {
-                neoStrip.setPixelColor(RgbValue, neopixel.colors(NeoPixelColors.Red));
-            }
-        }
-        if (ColorValue == ColorList.green) {
-            if (RgbValue == RgbList.rgb) {
-                neoStrip.showColor(neopixel.colors(NeoPixelColors.Red));
-            } else {
-                neoStrip.setPixelColor(RgbValue, neopixel.colors(NeoPixelColors.Red));
-            }
-        }
-        if (ColorValue == ColorList.blue) {
-            if (RgbValue == RgbList.rgb) {
-                neoStrip.showColor(neopixel.colors(NeoPixelColors.Red));
-            } else {
-                neoStrip.setPixelColor(RgbValue, neopixel.colors(NeoPixelColors.Red));
-            }
-        }
-        if (ColorValue == ColorList.indigo) {
-            if (RgbValue == RgbList.rgb) {
-                neoStrip.showColor(neopixel.colors(NeoPixelColors.Red));
-            } else {
-                neoStrip.setPixelColor(RgbValue, neopixel.colors(NeoPixelColors.Red));
-            }
-        }
-        if (ColorValue == ColorList.violet) {
-            if (RgbValue == RgbList.rgb) {
-                neoStrip.showColor(neopixel.colors(NeoPixelColors.Red));
-            } else {
-                neoStrip.setPixelColor(RgbValue, neopixel.colors(NeoPixelColors.Red));
-            }
-        }
-        if (ColorValue == ColorList.purple) {
-            if (RgbValue == RgbList.rgb) {
-                neoStrip.showColor(neopixel.colors(NeoPixelColors.Red));
-            } else {
-                neoStrip.setPixelColor(RgbValue, neopixel.colors(NeoPixelColors.Red));
-            }
-        }
-        if (ColorValue == ColorList.white) {
-            if (RgbValue == RgbList.rgb) {
-                neoStrip.showColor(neopixel.colors(NeoPixelColors.Red));
-            } else {
-                neoStrip.setPixelColor(RgbValue, neopixel.colors(NeoPixelColors.Red));
-            }
-        }
-        if (ColorValue == ColorList.black) {
-            if (RgbValue == RgbList.rgb) {
-                neoStrip.showColor(neopixel.colors(NeoPixelColors.Red));
-            } else {
-                neoStrip.setPixelColor(RgbValue, neopixel.colors(NeoPixelColors.Red));
-            }
-        }
-        neoStrip.show();
+        neoStrip.show();     
     }
 	/**
      * 关闭所有LED灯
