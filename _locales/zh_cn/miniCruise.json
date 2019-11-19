@@ -1,0 +1,9 @@
+{
+  "MiniCruise.motorRun|block": "电机 左 速度%leftSpeed| 右 速度%rightSpeed| 时长%time 秒",
+  "MiniCruise.myPlayTone|block": "播放音调 %tone| ，节拍 %beatInfo",
+  "MiniCruise.readPatrol|block": "巡线传感器 %patrol",
+  "MiniCruise.sensorDistance|block": "超声波探测距离 %unit",
+  "MiniCruise.cruiseIR|block": "%IRDire| 有障碍物",
+  "MiniCruise.setRGB|block": "设置板载LED %RgbValue| 颜色为 %ColorValue",
+  "MiniCruise.neoClear|block": "关闭所有LED灯",
+}
