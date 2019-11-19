@@ -10,7 +10,9 @@
     "icon": "icon.png",
     "files": [
         "README.md",
-        "main.ts"
+        "main.ts",
+		"_locales/zh-CN/miniCruise.json",
+		"_locales/zh-TW/miniCruise.json"
     ],
     "testFiles": [
         "test.ts"
