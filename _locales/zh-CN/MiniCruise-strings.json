@@ -6,4 +6,5 @@
   "MiniCruise.cruiseIR|block": "%IRDire| 有障碍物",
   "MiniCruise.setRGB|block": "设置板载LED %RgbValue| 颜色为 %ColorValue",
   "MiniCruise.neoClear|block": "关闭所有LED灯",
+  "MiniCruise|block": "miniCruise"
 }
