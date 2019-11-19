@@ -226,9 +226,9 @@ namespace MiniCruise {
     export function setRGB(RgbValue: RgbList, ColorValue: ColorList): void {
         if (ColorValue == ColorList.red) {
             if (RgbValue == RgbList.rgb) {
-                neoStrip.showColor(neopixel.colors(NeoPixelColors.Green));
+                neoStrip.showColor(neopixel.colors(NeoPixelColors.Red));
             } else {
-                neoStrip.setPixelColor(RgbValue, neopixel.colors(NeoPixelColors.Green));
+                neoStrip.setPixelColor(RgbValue, neopixel.colors(NeoPixelColors.Red));
             }
         }
         if (ColorValue == ColorList.orange) {
