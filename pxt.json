@@ -11,8 +11,8 @@
     "files": [
         "README.md",
         "main.ts",
-		"_locales/zh-CN/MiniCruise-strings.json",
-		"_locales/zh-TW/MiniCruise-strings.json"
+		"_locales/zh/MiniCruise-strings.json",
+		"_locales/zh-tw/MiniCruise-strings.json"
     ],
     "testFiles": [
         "test.ts"
