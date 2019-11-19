@@ -65,25 +65,25 @@ enum RgbList {
 }
 enum ColorList {
     //% block="RED"
-    red = 1,
+    red = 0,
     //% block="ORANGE"
-    orange = 2,
+    orange = 10,
     //% block="YELLOW"
-    yellow = 3,
+    yellow = -1,
     //% block="GREEN"
-    green = 4,
+    green = 11,
     //% block="BLUE"
-    blue = 5,
+    blue = 12,
     //% block="INDIGO"
-    indigo = 6,
+    indigo = 13,
     //% block="VIOLET"
-    violet = 7,
+    violet = 14,
     //% block="PURPLE"
-    purple = 8,
+    purple = 15,
     //% block="WHITE"
-    white = 9,
+    white = 16,
     //% block="BLOCK"
-    black = 1
+    black = 17
 }
 
 //% weight=100 color=#1B80C4 icon="\uf0e7"
