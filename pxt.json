@@ -9,10 +9,9 @@
     "license": "MIT",
     "icon": "icon.png",
     "files": [
-        "README.md",
-        "main.ts",
-		"_locales/zh/MiniCruise-strings.json",
-		"_locales/zh-tw/MiniCruise-strings.json"
+      "README.md",
+      "main.ts",
+	  "_locales/zh/MiniCruise-strings.json"
     ],
     "testFiles": [
         "test.ts"
