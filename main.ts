@@ -65,23 +65,23 @@ enum RgbList {
 }
 enum ColorList {
     //% block="RED"
-    red = 0,
+    red = -1,
     //% block="ORANGE"
-    orange = 2,
+    orange = 10,
     //% block="YELLOW"
-    yellow = 3,
+    yellow = 11,
     //% block="GREEN"
-    green = 4,
+    green = 12,
     //% block="BLUE"
-    blue = 5,
+    blue = 13,
     //% block="INDIGO"
-    indigo = 6,
+    indigo = 14,
     //% block="VIOLET"
-    violet = 7,
+    violet = 15,
     //% block="PURPLE"
-    purple = 8,
+    purple = 16,
     //% block="WHITE"
-    white = 9,
+    white = 17,
     //% block="BLOCK"
     black = 1
 }
@@ -233,65 +233,65 @@ namespace MiniCruise {
         }
         if (ColorValue == ColorList.orange) {
             if (RgbValue == RgbList.rgb) {
-                neoStrip.showColor(neopixel.colors(NeoPixelColors.Orange));
+                neoStrip.showColor(neopixel.colors(NeoPixelColors.Red));
             } else {
-                neoStrip.setPixelColor(RgbValue, neopixel.colors(NeoPixelColors.Orange));
+                neoStrip.setPixelColor(RgbValue, neopixel.colors(NeoPixelColors.Red));
             }
         }
         if (ColorValue == ColorList.yellow) {
             if (RgbValue == RgbList.rgb) {
-                neoStrip.showColor(neopixel.colors(NeoPixelColors.Yellow));
+                neoStrip.showColor(neopixel.colors(NeoPixelColors.Red));
             } else {
-                neoStrip.setPixelColor(RgbValue, neopixel.colors(NeoPixelColors.Yellow));
+                neoStrip.setPixelColor(RgbValue, neopixel.colors(NeoPixelColors.Red));
             }
         }
         if (ColorValue == ColorList.green) {
             if (RgbValue == RgbList.rgb) {
-                neoStrip.showColor(neopixel.colors(NeoPixelColors.Green));
+                neoStrip.showColor(neopixel.colors(NeoPixelColors.Red));
             } else {
-                neoStrip.setPixelColor(RgbValue, neopixel.colors(NeoPixelColors.Green));
+                neoStrip.setPixelColor(RgbValue, neopixel.colors(NeoPixelColors.Red));
             }
         }
         if (ColorValue == ColorList.blue) {
             if (RgbValue == RgbList.rgb) {
-                neoStrip.showColor(neopixel.colors(NeoPixelColors.Blue));
+                neoStrip.showColor(neopixel.colors(NeoPixelColors.Red));
             } else {
-                neoStrip.setPixelColor(RgbValue, neopixel.colors(NeoPixelColors.Blue));
+                neoStrip.setPixelColor(RgbValue, neopixel.colors(NeoPixelColors.Red));
             }
         }
         if (ColorValue == ColorList.indigo) {
             if (RgbValue == RgbList.rgb) {
-                neoStrip.showColor(neopixel.colors(NeoPixelColors.Indigo));
+                neoStrip.showColor(neopixel.colors(NeoPixelColors.Red));
             } else {
-                neoStrip.setPixelColor(RgbValue, neopixel.colors(NeoPixelColors.Indigo));
+                neoStrip.setPixelColor(RgbValue, neopixel.colors(NeoPixelColors.Red));
             }
         }
         if (ColorValue == ColorList.violet) {
             if (RgbValue == RgbList.rgb) {
-                neoStrip.showColor(neopixel.colors(NeoPixelColors.Violet));
+                neoStrip.showColor(neopixel.colors(NeoPixelColors.Red));
             } else {
-                neoStrip.setPixelColor(RgbValue, neopixel.colors(NeoPixelColors.Violet));
+                neoStrip.setPixelColor(RgbValue, neopixel.colors(NeoPixelColors.Red));
             }
         }
         if (ColorValue == ColorList.purple) {
             if (RgbValue == RgbList.rgb) {
-                neoStrip.showColor(neopixel.colors(NeoPixelColors.Purple));
+                neoStrip.showColor(neopixel.colors(NeoPixelColors.Red));
             } else {
-                neoStrip.setPixelColor(RgbValue, neopixel.colors(NeoPixelColors.Purple));
+                neoStrip.setPixelColor(RgbValue, neopixel.colors(NeoPixelColors.Red));
             }
         }
         if (ColorValue == ColorList.white) {
             if (RgbValue == RgbList.rgb) {
-                neoStrip.showColor(neopixel.colors(NeoPixelColors.White));
+                neoStrip.showColor(neopixel.colors(NeoPixelColors.Red));
             } else {
-                neoStrip.setPixelColor(RgbValue, neopixel.colors(NeoPixelColors.White));
+                neoStrip.setPixelColor(RgbValue, neopixel.colors(NeoPixelColors.Red));
             }
         }
         if (ColorValue == ColorList.black) {
             if (RgbValue == RgbList.rgb) {
-                neoStrip.showColor(neopixel.colors(NeoPixelColors.Black));
+                neoStrip.showColor(neopixel.colors(NeoPixelColors.Red));
             } else {
-                neoStrip.setPixelColor(RgbValue, neopixel.colors(NeoPixelColors.Black));
+                neoStrip.setPixelColor(RgbValue, neopixel.colors(NeoPixelColors.Red));
             }
         }
         neoStrip.show();
