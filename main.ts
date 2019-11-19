@@ -67,23 +67,23 @@ enum ColorList {
     //% block="RED"
     red = 0,
     //% block="ORANGE"
-    orange = 10,
+    orange = 2,
     //% block="YELLOW"
-    yellow = -1,
+    yellow = 3,
     //% block="GREEN"
-    green = 11,
+    green = 4,
     //% block="BLUE"
-    blue = 12,
+    blue = 5,
     //% block="INDIGO"
-    indigo = 13,
+    indigo = 6,
     //% block="VIOLET"
-    violet = 14,
+    violet = 7,
     //% block="PURPLE"
-    purple = 15,
+    purple = 8,
     //% block="WHITE"
-    white = 16,
+    white = 9,
     //% block="BLOCK"
-    black = 17
+    black = 1
 }
 
 //% weight=100 color=#1B80C4 icon="\uf0e7"
