@@ -51,17 +51,7 @@ enum RgbList {
     //% block="LED3"
     rgb3 = 2,
     //% block="LED4"
-    rgb4 = 3,
-    //% block="LED5"
-    rgb5 = 4,
-    //% block="LED6"
-    rgb6 = 5,
-    //% block="LED7"
-    rgb7 = 6,
-    //% block="LED8"
-    rgb8 = 7,
-    //% block="LED9"
-    rgb9 = 8
+    rgb4 = 3
 }
 enum ColorList {
     //% block="RED"
@@ -88,7 +78,7 @@ enum ColorList {
 
 //% weight=100 color=#1B80C4 icon="\uf0e7"
 namespace MiniCruise {
-    let neoStrip = neopixel.create(DigitalPin.P1, 9, NeoPixelMode.RGB);
+    let neoStrip = neopixel.create(DigitalPin.P5, 4, NeoPixelMode.RGB);
 	/**
 	*设置电机
 	*/
