@@ -33,9 +33,7 @@ enum Patrol {
 }
 enum PingUnit {
     //% block="cm"
-    Centimeters,
-    //% block="μs"
-    MicroSeconds
+    Centimeters
 }
 enum IRList {
     //% block="FRONT"
@@ -88,11 +86,19 @@ namespace MiniCruise {
     //% weight=100
     export function motorRun(leftSpeed: number, rightSpeed: number, time: number): void {
         let leftRotation = 1;
-        if (leftSpeed < 0) {
+		leftSpeed = 1023 - leftSpeed;
+        if (leftSpeed > 1023) {
+            leftRotation = 1023;
+        }
+		if (leftSpeed < 0) {
             leftRotation = 0;
         }
         let rightRotation = 1;
-        if (rightSpeed < 0) {
+		rightSpeed = 1023 - rightSpeed;
+        if (rightSpeed > 1023) {
+            rightRotation = 1023;
+        }
+		if (rightSpeed < 0) {
             rightRotation = 0;
         }
         //左电机 M1
@@ -179,14 +185,14 @@ namespace MiniCruise {
     //% blockId="mini_cruise_sensor" block="Ultrasonic Distance %unit"
     //% weight=69
     export function sensorDistance(unit: PingUnit, maxCmDistance = 500): number {
-        pins.setPull(DigitalPin.P2, PinPullMode.PullNone);
+        pins.setPull(DigitalPin.P2, PinPullMode.P1);
         pins.digitalWritePin(DigitalPin.P2, 0);
         control.waitMicros(2);
         pins.digitalWritePin(DigitalPin.P2, 1);
         control.waitMicros(10);
         pins.digitalWritePin(DigitalPin.P2, 0);
         // read pulse
-        const d = pins.pulseIn(DigitalPin.P2, PulseValue.High, maxCmDistance * 58);
+        const d = pins.pulseIn(DigitalPin.P1, PulseValue.High, maxCmDistance * 58);
         switch (unit) {
             case PingUnit.Centimeters: return Math.idiv(d, 58);
             default: return d;
@@ -199,7 +205,7 @@ namespace MiniCruise {
     //% weight=68
     export function cruiseIR(IRDire: IRList): boolean {
         if (IRDire == IRList.front) {
-            if (pins.digitalReadPin(DigitalPin.P5) == 0) {
+            if (pins.digitalReadPin(DigitalPin.P8) == 0) {
                 return true;
             } else {
                 return false;
@@ -286,13 +292,5 @@ namespace MiniCruise {
             }
         }
         neoStrip.show();     
-    }
-	/**
-     * 关闭所有LED灯
-     */
-    //% blockId="mini_cruise_neo_clear" block="Clear all"
-    //% weight=55
-    export function neoClear(): void {
-        neoStrip.showColor(neopixel.colors(NeoPixelColors.Black));
     }
 }

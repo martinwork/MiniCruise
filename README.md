@@ -72,9 +72,6 @@ MiniCruise.cruiseIR(IRList.front)
 //Set all onboard LED lights to be bright in red
 MiniCruise.setRGB(RgbList.rgb, ColorList.red)
 
-//Turn off all LED lights
-MiniCruise.neoClear()
-
 ## Support
 
 * for PXT/microbit
@@ -128,8 +125,6 @@ MiniCruise.cruiseIR(IRList.front)
 //设置所有的板载LED灯亮，颜色为红色
 MiniCruise.setRGB(RgbList.rgb, ColorList.red)
 
-//关闭所有LED灯
-MiniCruise.neoClear()
 ## 支持
 
 * for PXT/microbit
