@@ -206,15 +206,12 @@ namespace MiniCruise {
     //% blockId="mini_cruise_IR" block="%IRDire| Obstacle"
     //% weight=68
     export function cruiseIR(IRDire: IRList): boolean {
-        if (IRDire == IRList.front) {
-            if (pins.digitalReadPin(DigitalPin.P8) == 0) {
-                return true;
-            } else {
-                return false;
-            }
-        } else{
-            return false;
-        }
+		if (pins.digitalReadPin(DigitalPin.P8) == 0) {
+			pins.digitalWritePin(DigitalPin.P8, 1);
+			return true;
+		} else {
+			return false;
+		}
     }
 	/**
 	*设置所有的板载LED灯亮，颜色为红色
