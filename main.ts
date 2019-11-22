@@ -39,11 +39,7 @@ enum PingUnit {
 }
 enum IRList {
     //% block="FRONT"
-    front = 1,
-    //% block="LEFT"
-    right = 2,
-    //% block="RIGHT"
-    left = 3
+    front = 2
 }
 enum RgbList {
     //% block="ALL"
@@ -216,7 +212,7 @@ namespace MiniCruise {
             } else {
                 return false;
             }
-        } else {
+        } else{
             return false;
         }
     }
