@@ -185,7 +185,7 @@ namespace MiniCruise {
     //% blockId="mini_cruise_sensor" block="Ultrasonic Distance %unit"
     //% weight=69
     export function sensorDistance(unit: PingUnit, maxCmDistance = 500): number {
-        pins.setPull(DigitalPin.P2, PinPullMode.P1);
+        pins.setPull(DigitalPin.P2, PinPullMode.PullNone);
         pins.digitalWritePin(DigitalPin.P2, 0);
         control.waitMicros(2);
         pins.digitalWritePin(DigitalPin.P2, 1);
