@@ -187,21 +187,21 @@ namespace MiniCruise {
     //% blockId="mini_cruise_sensor" block="Ultrasonic Distance %unit"
     //% weight=69
     export function sensorDistance(unit: PingUnit, maxCmDistance = 500): number {
-        pins.setPull(DigitalPin.P2, PinPullMode.PullNone);
-        pins.digitalWritePin(DigitalPin.P2, 0);
+        pins.setPull(DigitalPin.P1, PinPullMode.PullNone);
+        pins.digitalWritePin(DigitalPin.P1, 0);
         control.waitMicros(2);
-        pins.digitalWritePin(DigitalPin.P2, 1);
+        pins.digitalWritePin(DigitalPin.P1, 1);
         control.waitMicros(10);
-        pins.digitalWritePin(DigitalPin.P2, 0);
+        pins.digitalWritePin(DigitalPin.P1, 0);
         // read pulse
-        const d = pins.pulseIn(DigitalPin.P1, PulseValue.High, maxCmDistance * 58);
+        const d = pins.pulseIn(DigitalPin.P2, PulseValue.High, maxCmDistance * 58);
         switch (unit) {
             case PingUnit.Centimeters: return Math.idiv(d, 58);
             default: return d;
         }
     }
 	/**
-      * 红外线探测左、前、右是否有障碍物
+      * 红外线探测前方是否有障碍物
       */
     //% blockId="mini_cruise_IR" block="%IRDire| Obstacle"
     //% weight=68
