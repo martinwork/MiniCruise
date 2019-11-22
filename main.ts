@@ -33,11 +33,17 @@ enum Patrol {
 }
 enum PingUnit {
     //% block="cm"
-    Centimeters
+    Centimeters,
+	//% block="μs"
+    MicroSeconds
 }
 enum IRList {
     //% block="FRONT"
-    front = 3
+    front = 1,
+    //% block="LEFT"
+    right = 2,
+    //% block="RIGHT"
+    left = 3
 }
 enum RgbList {
     //% block="ALL"
@@ -86,26 +92,26 @@ namespace MiniCruise {
     //% weight=100
     export function motorRun(leftSpeed: number, rightSpeed: number, time: number): void {
         let leftRotation = 1;
-		leftSpeed = 1023 - leftSpeed;
-        if (leftSpeed > 1023) {
+		let curLeftSpeed = 1023 - leftSpeed;
+        if (curLeftSpeed > 1023) {
             leftRotation = 1023;
         }
-		if (leftSpeed < 0) {
+		if (curLeftSpeed < 0) {
             leftRotation = 0;
         }
         let rightRotation = 1;
-		rightSpeed = 1023 - rightSpeed;
-        if (rightSpeed > 1023) {
+		let curRightSpeed = 1023 - rightSpeed;
+        if (curRightSpeed > 1023) {
             rightRotation = 1023;
         }
-		if (rightSpeed < 0) {
+		if (curRightSpeed < 0) {
             rightRotation = 0;
         }
         //左电机 M1
-        pins.analogWritePin(AnalogPin.P14, Math.abs(leftSpeed));
+        pins.analogWritePin(AnalogPin.P14, Math.abs(curLeftSpeed));
         pins.digitalWritePin(DigitalPin.P13, leftRotation);
         //右电机 M2
-        pins.analogWritePin(AnalogPin.P16, Math.abs(rightSpeed));
+        pins.analogWritePin(AnalogPin.P16, Math.abs(curRightSpeed));
         pins.digitalWritePin(DigitalPin.P15, rightRotation);
         //添加时间控制
         if (time < 0) {
