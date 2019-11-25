@@ -31,54 +31,56 @@ enum Patrol {
     //% block="■■"
     black_black = 4
 }
-enum PingUnit {
-    //% block="cm"
-    Centimeters,
-	//% block="μs"
-    MicroSeconds
-}
-enum IRList {
-    //% block="FRONT"
-    front = 2
-}
-enum RgbList {
-    //% block="ALL"
-    rgb = 9,
-    //% block="LED1"
-    rgb1 = 0,
-    //% block="LED2"
-    rgb2 = 1,
-    //% block="LED3"
-    rgb3 = 2,
-    //% block="LED4"
-    rgb4 = 3
-}
-enum ColorList {
-    //% block="RED"
-    red = -1,
-    //% block="ORANGE"
-    orange = 2,
-    //% block="YELLOW"
-    yellow = 3,
-    //% block="GREEN"
-    green = 4,
-    //% block="BLUE"
-    blue = 5,
-    //% block="INDIGO"
-    indigo = 6,
-    //% block="VIOLET"
-    violet = 7,
-    //% block="PURPLE"
-    purple = 8,
-    //% block="WHITE"
-    white = 9,
-    //% block="BLOCK"
-    black = 1
-}
 
 //% weight=100 color=#1B80C4 icon="\uf0e7"
 namespace MiniCruise {
     let neoStrip = neopixel.create(DigitalPin.P5, 4, NeoPixelMode.RGB);
+	
+	export enum PingUnit {
+		//% block="cm"
+		Centimeters,
+		//% block="μs"
+		MicroSeconds
+	}
+	export enum IRList {
+		//% block="FRONT"
+		front = 2
+	}
+	export enum RgbList {
+		//% block="ALL"
+		rgb = 9,
+		//% block="LED1"
+		rgb1 = 0,
+		//% block="LED2"
+		rgb2 = 1,
+		//% block="LED3"
+		rgb3 = 2,
+		//% block="LED4"
+		rgb4 = 3
+	}
+	export enum ColorList {
+		//% block="RED"
+		red = -1,
+		//% block="ORANGE"
+		orange = 2,
+		//% block="YELLOW"
+		yellow = 3,
+		//% block="GREEN"
+		green = 4,
+		//% block="BLUE"
+		blue = 5,
+		//% block="INDIGO"
+		indigo = 6,
+		//% block="VIOLET"
+		violet = 7,
+		//% block="PURPLE"
+		purple = 8,
+		//% block="WHITE"
+		white = 9,
+		//% block="BLOCK"
+		black = 1
+	}
+		
 	/**
 	*设置电机
 	*/
@@ -92,7 +94,7 @@ namespace MiniCruise {
         if (curLeftSpeed > 1023) {
             curLeftSpeed = -(1023 + leftSpeed);
 			if(curLeftSpeed<-1023){
-				curLeftSpeed = -1023
+				curLeftSpeed = -1023;
 			}
         }
 		if (curLeftSpeed < 0) {
@@ -103,7 +105,7 @@ namespace MiniCruise {
         if (curRightSpeed > 1023) {
             curRightSpeed = -(1023 + rightSpeed);
 			if(curRightSpeed<-1023){
-				curRightSpeed = -1023
+				curRightSpeed = -1023;
 			}
         }
 		if (curRightSpeed < 0) {

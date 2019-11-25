@@ -1,9 +1,28 @@
 {
+  "MiniCruise.PingUnit.Centimeters|block": "厘米",
+  "MiniCruise.PingUnit.MicroSeconds|block": "微秒",
+  "MiniCruise.IRList.front|block": "前置红外",
+  "MiniCruise.RgbList.rgb|block": "全部LED",
+  "MiniCruise.RgbList.rgb1|block": "LED1",
+  "MiniCruise.RgbList.rgb2|block": "LED2",
+  "MiniCruise.RgbList.rgb3|block": "LED3",
+  "MiniCruise.RgbList.rgb4|block": "LED4",
+  "MiniCruise.ColorList.red|block": "红色",
+  "MiniCruise.ColorList.orange|block": "橙色",
+  "MiniCruise.ColorList.yellow|block": "黄色",
+  "MiniCruise.ColorList.green|block": "绿色",
+  "MiniCruise.ColorList.blue|block": "蓝色",
+  "MiniCruise.ColorList.indigo|block": "靛蓝",
+  "MiniCruise.ColorList.violet|block": "紫罗兰",
+  "MiniCruise.ColorList.purple|block": "紫色",
+  "MiniCruise.ColorList.white|block": "白色",
+  "MiniCruise.ColorList.black|block": "黑色",
   "MiniCruise.motorRun|block": "电机 左 速度%leftSpeed| 右 速度%rightSpeed| 时长%time 秒",
   "MiniCruise.myPlayTone|block": "播放音调 %tone| ，节拍 %beatInfo",
   "MiniCruise.readPatrol|block": "巡线传感器 %patrol",
   "MiniCruise.sensorDistance|block": "超声波探测距离 %unit",
   "MiniCruise.cruiseIR|block": "%IRDire| 有障碍物",
   "MiniCruise.setRGB|block": "设置板载LED %RgbValue| 颜色为 %ColorValue",
-  "MiniCruise|block": "miniCruise"
+  "MiniCruise|block": "迷你克鲁斯"，
+  "{id:category}MiniCruise": "迷你克鲁斯"
 }
