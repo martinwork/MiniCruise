@@ -90,7 +90,10 @@ namespace MiniCruise {
         let leftRotation = 1;
 		let curLeftSpeed = 1023 - leftSpeed;
         if (curLeftSpeed > 1023) {
-            leftRotation = 1023;
+            curLeftSpeed = -(1023 + leftSpeed);
+			if(curLeftSpeed<-1023){
+				curLeftSpeed = -1023
+			}
         }
 		if (curLeftSpeed < 0) {
             leftRotation = 0;
@@ -98,7 +101,10 @@ namespace MiniCruise {
         let rightRotation = 1;
 		let curRightSpeed = 1023 - rightSpeed;
         if (curRightSpeed > 1023) {
-            rightRotation = 1023;
+            curRightSpeed = -(1023 + rightSpeed);
+			if(curRightSpeed<-1023){
+				curRightSpeed = -1023
+			}
         }
 		if (curRightSpeed < 0) {
             rightRotation = 0;
