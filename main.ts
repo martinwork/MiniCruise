@@ -44,6 +44,14 @@ namespace MiniCruise {
         //% block="FRONT"
         front = 2
     }
+	export enum PinList {
+        //% block="UP"
+        up_pull = 1,
+        //% block="DOWN"
+        down_pull = 2,
+        //% block="NONE"
+        no_pull = 3
+    }
     export enum RgbList {
         //% block="ALL"
         rgb = 9,
@@ -80,7 +88,7 @@ namespace MiniCruise {
     }
     let neoStrip = neopixel.create(DigitalPin.P5, 4, NeoPixelMode.RGB);
 	/**
-	*设置电机
+	*Control motor
 	*/
     //% blockId="mini_cruise_motor" block="Set DC Motor Left Speed%leftSpeed| Right Speed%rightSpeed| for%time"
     //% leftSpeed.min=-1023 leftSpeed.max=1023
@@ -129,7 +137,7 @@ namespace MiniCruise {
         pins.digitalWritePin(DigitalPin.P15, 0);
     }
 	/**
-     * 播放音调
+     * Control buzzer
      */
     //% weight=89
     //% blockId="mini_cruise_tone" block="Play Tone %tone| for %beatInfo"
@@ -154,7 +162,7 @@ namespace MiniCruise {
         }
     }
 	/**
-	*巡线功能
+	*Line Inspection Module
 	*/
     //% weight=79
     //% blockId="mini_cruise_patrol" block="Line Tracer Detects %patrol"
@@ -188,7 +196,7 @@ namespace MiniCruise {
         }
     }
 	/**
-	*获得障碍物距离（单位为cm）
+	*Obstacle distance obtained by infrared
 	*/
     //% blockId="mini_cruise_sensor" block="Ultrasonic Distance %unit"
     //% weight=69
@@ -207,7 +215,7 @@ namespace MiniCruise {
         }
     }
 	/**
-      * 红外线探测前方是否有障碍物
+      * Determine if there are obstacles
       */
     //% blockId="mini_cruise_IR" block="%IRDire| Obstacle"
     //% weight=68
@@ -220,75 +228,75 @@ namespace MiniCruise {
 		}
     }
 	/**
-	*设置所有的板载LED灯亮，颜色为红色
+	*Controlling onboard LED lights
 	*/
     //% blockId="mini_cruise_rgb" block="Set LED %RgbValue| Colour %ColorValue"
     //% weight=59
-    export function setRGB(RgbValue: RgbList, ColorValue:ColorList): void {    
+    export function setRGB(RgbValue: RgbList, ColorValue:ColorList): void {
         if(ColorValue == ColorList.red){
             if(RgbValue == RgbList.rgb){
                 neoStrip.showColor(neopixel.colors(NeoPixelColors.Red));
             }else{
                 neoStrip.setPixelColor(RgbValue, neopixel.colors(NeoPixelColors.Red));
             }
-            
-        }     
+
+        }
         if(ColorValue == ColorList.orange){
             if(RgbValue == RgbList.rgb){
                 neoStrip.showColor(neopixel.colors(NeoPixelColors.Orange));
             }else{
                 neoStrip.setPixelColor(RgbValue, neopixel.colors(NeoPixelColors.Orange));
             }
-        }     
+        }
         if(ColorValue == ColorList.yellow){
             if(RgbValue == RgbList.rgb){
                 neoStrip.showColor(neopixel.colors(NeoPixelColors.Yellow));
             }else{
                 neoStrip.setPixelColor(RgbValue, neopixel.colors(NeoPixelColors.Yellow));
             }
-        }     
+        }
         if(ColorValue == ColorList.green){
             if(RgbValue == RgbList.rgb){
                 neoStrip.showColor(neopixel.colors(NeoPixelColors.Green));
             }else{
                 neoStrip.setPixelColor(RgbValue, neopixel.colors(NeoPixelColors.Green));
             }
-        }      
+        }
         if(ColorValue == ColorList.blue){
             if(RgbValue == RgbList.rgb){
                 neoStrip.showColor(neopixel.colors(NeoPixelColors.Blue));
             }else{
                 neoStrip.setPixelColor(RgbValue, neopixel.colors(NeoPixelColors.Blue));
             }
-        }   
+        }
         if(ColorValue == ColorList.indigo){
             if(RgbValue == RgbList.rgb){
                 neoStrip.showColor(neopixel.colors(NeoPixelColors.Indigo));
             }else{
                 neoStrip.setPixelColor(RgbValue, neopixel.colors(NeoPixelColors.Indigo));
             }
-        }    
+        }
         if(ColorValue == ColorList.violet){
             if(RgbValue == RgbList.rgb){
                 neoStrip.showColor(neopixel.colors(NeoPixelColors.Violet));
             }else{
                 neoStrip.setPixelColor(RgbValue, neopixel.colors(NeoPixelColors.Violet));
             }
-        }   
+        }
         if(ColorValue == ColorList.purple){
             if(RgbValue == RgbList.rgb){
                 neoStrip.showColor(neopixel.colors(NeoPixelColors.Purple));
             }else{
                 neoStrip.setPixelColor(RgbValue, neopixel.colors(NeoPixelColors.Purple));
             }
-        }       
+        }
         if(ColorValue == ColorList.white){
             if(RgbValue == RgbList.rgb){
                 neoStrip.showColor(neopixel.colors(NeoPixelColors.White));
             }else{
                 neoStrip.setPixelColor(RgbValue, neopixel.colors(NeoPixelColors.White));
             }
-        }    
+        }
         if(ColorValue == ColorList.black){
             if(RgbValue == RgbList.rgb){
                 neoStrip.showColor(neopixel.colors(NeoPixelColors.Black));
@@ -296,6 +304,21 @@ namespace MiniCruise {
                 neoStrip.setPixelColor(RgbValue, neopixel.colors(NeoPixelColors.Black));
             }
         }
-        neoStrip.show();     
+        neoStrip.show();
+    }
+    /**
+     *Set pull pin
+     */
+	//% blockId=tape_rgb block="Set Pull Pin %pin| to %way"
+    //% weight=49
+    export function setTapeLights(pin: DigitalPin, way: PinList): void {
+
+        if(way = PinList.up_pull){
+            pins.setPull(pin, PinPullMode.PullUp);
+        }else if(way = PinList.down_pull){
+            pins.setPull(pin, PinPullMode.PullDown);
+        }else{
+            pins.setPull(pin, PinPullMode.PullNone);
+        }
     }
 }
