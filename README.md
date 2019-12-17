@@ -20,9 +20,9 @@ let strip = neopixel.create(DigitalPin.P15, 24, NeoPixelMode.RGB)
 strip.showRainbow(1, 360)
 basic.showIcon(IconNames.Heart)
 basic.forever(function () {
-    MiniCruise.motorRun(500, 500, 2)
+    CruiseE.motorRun(500, 500, 2)
     basic.pause(2000)
-    MiniCruise.motorRun(500, 500, 2)
+    CruiseE.motorRun(500, 500, 2)
     basic.pause(2000)
 })
 basic.forever(function () {

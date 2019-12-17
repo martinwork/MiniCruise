@@ -33,7 +33,7 @@ enum Patrol {
 }
 
 //% weight=100 color=#1B80C4 icon="\uf0e7"
-namespace MiniCruise {
+namespace CruiseE {
     export enum PingUnit {
         //% block="cm"
         Centimeters,
@@ -86,7 +86,90 @@ namespace MiniCruise {
         //% block="BLOCK"
         black = 1
     }
+    export enum MotorList {
+        //% block="ALL"
+        all = 1,
+        //% block="LEFT"
+        left = 2,
+        //% block="RIGHT"
+        right = 3
+    }
+    export enum MotorDirection {
+        //% block="FORWARD"
+        forward = 1,
+        //% block="BACKWARD"
+        backward = 2
+    }
     let neoStrip = neopixel.create(DigitalPin.P5, 4, NeoPixelMode.RGB);
+
+    /**
+     * Stop all motor
+     */
+    //% weight=98
+    //% blockId="mini_cruise_motor_stop" block="Stop all motor"
+    export function stopAllMotor() {
+        //左电机 M1
+        pins.analogWritePin(AnalogPin.P14, 0);
+        pins.digitalWritePin(DigitalPin.P13, 0);
+        //右电机 M2
+        pins.analogWritePin(AnalogPin.P16, 0);
+        pins.digitalWritePin(DigitalPin.P15, 0);
+    }
+    /**
+     *Control motor complex
+     */
+    //% blockId="mini_cruise_motor_complex" block="Motor %targetMotor| direction%currentDirection| for%targetSpeed"
+    //% leftSpeed.min=0 leftSpeed.max=1023
+    //% weight=99
+    export function motorRunComplex(targetMotor: MotorList, currentDirection: MotorDirection, targetSpeed: number): void {
+        if(targetMotor==MotorList.all){
+            if(currentDirection==MotorDirection.forward){
+                let leftRotation = 1;
+                let curLeftSpeed = 1023 - targetSpeed;
+                let rightRotation = 1;
+                let curRightSpeed = 1023 - targetSpeed;
+                //左电机 M1
+                pins.analogWritePin(AnalogPin.P14, Math.abs(curLeftSpeed));
+                pins.digitalWritePin(DigitalPin.P13, leftRotation);
+                //右电机 M2
+                pins.analogWritePin(AnalogPin.P16, Math.abs(curRightSpeed));
+                pins.digitalWritePin(DigitalPin.P15, rightRotation);
+            }else{
+                let leftRotation = 0;
+                let curLeftSpeed = -(1023-targetSpeed);
+                let rightRotation = 0;
+                let curRightSpeed = -(1023-targetSpeed);
+                pins.analogWritePin(AnalogPin.P14, Math.abs(curLeftSpeed));
+                pins.digitalWritePin(DigitalPin.P13, leftRotation);
+                pins.analogWritePin(AnalogPin.P16, Math.abs(curRightSpeed));
+                pins.digitalWritePin(DigitalPin.P15, rightRotation);
+            }
+        }else if(targetMotor==MotorList.left){
+            if(currentDirection==MotorDirection.forward){
+                let leftRotation = 1;
+                let curLeftSpeed = 1023 - targetSpeed;
+                pins.analogWritePin(AnalogPin.P14, Math.abs(curLeftSpeed));
+                pins.digitalWritePin(DigitalPin.P13, leftRotation);
+            }else{
+                let leftRotation = 0;
+                let curLeftSpeed = -(1023-targetSpeed);
+                pins.analogWritePin(AnalogPin.P14, Math.abs(curLeftSpeed));
+                pins.digitalWritePin(DigitalPin.P13, leftRotation);
+            }
+        }else if(targetMotor==MotorList.right){
+            if(currentDirection==MotorDirection.forward){
+                let rightRotation = 1;
+                let curRightSpeed = 1023 - targetSpeed;
+                pins.analogWritePin(AnalogPin.P16, Math.abs(curRightSpeed));
+                pins.digitalWritePin(DigitalPin.P15, rightRotation);
+            }else{
+                let rightRotation = 0;
+                let curRightSpeed = -(1023-targetSpeed);
+                pins.analogWritePin(AnalogPin.P16, Math.abs(curRightSpeed));
+                pins.digitalWritePin(DigitalPin.P15, rightRotation);
+            }
+        }
+    }
 	/**
 	*Control motor
 	*/
