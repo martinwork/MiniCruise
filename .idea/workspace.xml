@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="fe5410e6-f8da-4e99-8802-bb2c7b3b46fb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_locales/zh/CruiseE-strings.json" beforeDir="false" afterPath="$PROJECT_DIR$/_locales/zh/cruise-strings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_locales/zh/cruise-strings.json" beforeDir="false" afterPath="$PROJECT_DIR$/_locales/zh/CruiseE-strings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pxt.json" beforeDir="false" afterPath="$PROJECT_DIR$/pxt.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -21,8 +20,16 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
+            <state relative-caret-position="875">
               <caret line="35" column="17" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="17" />
+              <folding>
+                <element signature="n#PingUnit#0;n#MiniCruise#0" />
+                <element signature="n#IRList#0;n#MiniCruise#0" />
+                <element signature="n#PinList#0;n#MiniCruise#0" />
+                <element signature="n#RgbList#0;n#MiniCruise#0" />
+                <element signature="n#ColorList#0;n#MiniCruise#0" />
+                <element signature="n#!!block;n#motorRunComplex#0;n#CruiseE#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -31,8 +38,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="186">
-                <caret line="13" column="13" lean-forward="true" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+              <first_editor relative-caret-position="411">
+                <caret line="22" column="11" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="11" />
               </first_editor>
               <second_editor />
             </state>
@@ -43,16 +50,16 @@
         <entry file="file://$PROJECT_DIR$/pxt.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="325">
-              <caret line="13" column="39" lean-forward="true" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
+              <caret line="13" column="40" lean-forward="true" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_locales/zh/cruise-strings.json">
+        <entry file="file://$PROJECT_DIR$/_locales/zh/CruiseE-strings.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="781">
-              <caret line="36" column="1" lean-forward="true" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
+            <state relative-caret-position="900">
+              <caret line="36" column="28" lean-forward="true" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -70,6 +77,7 @@
       <find>MotorDirection</find>
       <find>motorRun</find>
       <find>stopAllMotor</find>
+      <find>MotorList</find>
       <find>motorRunComplex</find>
     </findStrings>
   </component>
@@ -82,8 +90,9 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/_locales/zh/MiniCruise-strings.json" />
         <option value="$PROJECT_DIR$/main.ts" />
-        <option value="$PROJECT_DIR$/pxt.json" />
         <option value="$PROJECT_DIR$/_locales/zh/cruise-strings.json" />
+        <option value="$PROJECT_DIR$/pxt.json" />
+        <option value="$PROJECT_DIR$/_locales/zh/CruiseE-strings.json" />
       </list>
     </option>
   </component>
@@ -177,12 +186,12 @@
       <updated>1574927357799</updated>
       <workItem from="1574927359600" duration="2705000" />
       <workItem from="1574931019727" duration="247000" />
-      <workItem from="1576546310543" duration="5878000" />
+      <workItem from="1576546310543" duration="7100000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8830000" />
+    <option name="totallyTimeSpent" value="10052000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="128" y="80" width="2195" height="1395" extended-state="0" />
@@ -219,34 +228,42 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="186">
-            <caret line="13" column="13" lean-forward="true" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/main.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="875">
+          <caret line="35" column="17" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="17" />
+          <folding>
+            <element signature="n#PingUnit#0;n#MiniCruise#0" />
+            <element signature="n#IRList#0;n#MiniCruise#0" />
+            <element signature="n#PinList#0;n#MiniCruise#0" />
+            <element signature="n#RgbList#0;n#MiniCruise#0" />
+            <element signature="n#ColorList#0;n#MiniCruise#0" />
+            <element signature="n#!!block;n#motorRunComplex#0;n#CruiseE#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pxt.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
-          <caret line="13" column="39" lean-forward="true" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
+          <caret line="13" column="40" lean-forward="true" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="35" column="17" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="17" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="411">
+            <caret line="22" column="11" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="11" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_locales/zh/cruise-strings.json">
+    <entry file="file://$PROJECT_DIR$/_locales/zh/CruiseE-strings.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="781">
-          <caret line="36" column="1" lean-forward="true" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
+        <state relative-caret-position="900">
+          <caret line="36" column="28" lean-forward="true" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
         </state>
       </provider>
     </entry>

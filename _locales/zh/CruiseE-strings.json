@@ -10,8 +10,8 @@
   "CruiseE.MotorList.all|block": "全部",
   "CruiseE.MotorList.left|block": "左侧",
   "CruiseE.MotorList.right|block": "右侧",
-  "CruiseE.MotorDirection.forward|block": "向前",
   "CruiseE.MotorDirection.backward|block": "向后",
+  "CruiseE.MotorDirection.forward|block": "向前",
   "CruiseE.PinList.up_pull|block": "上",
   "CruiseE.PinList.down_pull|block": "下",
   "CruiseE.PinList.no_pull|block": "无",
@@ -33,5 +33,6 @@
   "CruiseE.readPatrol|block": "巡线传感器 %patrol",
   "CruiseE.sensorDistance|block": "超声波探测距离 %unit",
   "CruiseE.cruiseIR|block": "%IRDire| 有障碍物",
-  "CruiseE.setRGB|block": "设置板载LED %RgbValue| 颜色为 %ColorValue"
+  "CruiseE.setRGB|block": "设置板载LED %RgbValue| 颜色为 %ColorValue",
+  "CruiseE|block": "CruiseE"
 }
