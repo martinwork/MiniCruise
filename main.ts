@@ -119,7 +119,7 @@ namespace CruiseE {
      *Control motor complex
      */
     //% blockId="mini_cruise_motor_complex" block="Motor %targetMotor| direction%currentDirection| for%targetSpeed"
-    //% leftSpeed.min=0 leftSpeed.max=1023
+    //% targetSpeed.min=0 targetSpeed.max=1023
     //% weight=99
     export function motorRunComplex(targetMotor: MotorList, currentDirection: MotorDirection, targetSpeed: number): void {
         if(targetMotor==MotorList.all){
@@ -136,9 +136,9 @@ namespace CruiseE {
                 pins.digitalWritePin(DigitalPin.P15, rightRotation);
             }else{
                 let leftRotation = 0;
-                let curLeftSpeed = -(1023-targetSpeed);
+                let curLeftSpeed = -targetSpeed;
                 let rightRotation = 0;
-                let curRightSpeed = -(1023-targetSpeed);
+                let curRightSpeed = -targetSpeed;
                 pins.analogWritePin(AnalogPin.P14, Math.abs(curLeftSpeed));
                 pins.digitalWritePin(DigitalPin.P13, leftRotation);
                 pins.analogWritePin(AnalogPin.P16, Math.abs(curRightSpeed));
@@ -152,7 +152,7 @@ namespace CruiseE {
                 pins.digitalWritePin(DigitalPin.P13, leftRotation);
             }else{
                 let leftRotation = 0;
-                let curLeftSpeed = -(1023-targetSpeed);
+                let curLeftSpeed = -targetSpeed;
                 pins.analogWritePin(AnalogPin.P14, Math.abs(curLeftSpeed));
                 pins.digitalWritePin(DigitalPin.P13, leftRotation);
             }
@@ -164,7 +164,7 @@ namespace CruiseE {
                 pins.digitalWritePin(DigitalPin.P15, rightRotation);
             }else{
                 let rightRotation = 0;
-                let curRightSpeed = -(1023-targetSpeed);
+                let curRightSpeed = -targetSpeed;
                 pins.analogWritePin(AnalogPin.P16, Math.abs(curRightSpeed));
                 pins.digitalWritePin(DigitalPin.P15, rightRotation);
             }
