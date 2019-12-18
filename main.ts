@@ -100,6 +100,16 @@ namespace CruiseE {
         //% block="BACKWARD"
         backward = 2
     }
+    export enum MusicList {
+        //% block="Two tigers"
+        music1 = 1,
+        //% block="Birthday"
+        music2 = 2,
+        //% block="Merry Christmas"
+        music3 = 3,
+        //% block="Little stars"
+        music4 = 4,
+    }
     let neoStrip = neopixel.create(DigitalPin.P5, 4, NeoPixelMode.RGB);
 
     /**
@@ -242,6 +252,62 @@ namespace CruiseE {
         }
         if (beatInfo == BeatList.breve_beat) {
             music.playTone(tone, music.beat(BeatFraction.Breve));
+        }
+    }
+    /**
+     * Control buzzer play music
+     */
+    //% weight=90
+    //% blockId="mini_cruise_play_music" block="Play music %musicItem"
+    export function playMusic(musicItem:MusicList) : void {
+        if(musicItem==MusicList.music1){ // 两只老虎
+            music.playTone(523, music.beat(BeatFraction.Quarter))
+            music.playTone(587, music.beat(BeatFraction.Quarter))
+            music.playTone(658, music.beat(BeatFraction.Quarter))
+            music.playTone(523, music.beat(BeatFraction.Quarter))
+            music.playTone(523, music.beat(BeatFraction.Quarter))
+            music.playTone(587, music.beat(BeatFraction.Quarter))
+            music.playTone(658, music.beat(BeatFraction.Quarter))
+            music.playTone(523, music.beat(BeatFraction.Quarter))
+            music.playTone(658, music.beat(BeatFraction.Quarter))
+            music.playTone(698, music.beat(BeatFraction.Quarter))
+            music.playTone(784, music.beat(BeatFraction.Half))
+            music.playTone(658, music.beat(BeatFraction.Quarter))
+            music.playTone(698, music.beat(BeatFraction.Quarter))
+            music.playTone(784, music.beat(BeatFraction.Half))
+            music.playTone(784, music.beat(BeatFraction.Eighth))
+            music.playTone(880, music.beat(BeatFraction.Eighth))
+            music.playTone(784, music.beat(BeatFraction.Eighth))
+            music.playTone(698, music.beat(BeatFraction.Eighth))
+            music.playTone(658, music.beat(BeatFraction.Quarter))
+            music.playTone(523, music.beat(BeatFraction.Quarter))
+            music.playTone(784, music.beat(BeatFraction.Eighth))
+            music.playTone(880, music.beat(BeatFraction.Eighth))
+            music.playTone(784, music.beat(BeatFraction.Eighth))
+            music.playTone(698, music.beat(BeatFraction.Eighth))
+            music.playTone(658, music.beat(BeatFraction.Quarter))
+            music.playTone(523, music.beat(BeatFraction.Quarter))
+            music.playTone(523, music.beat(BeatFraction.Quarter))
+            music.playTone(392, music.beat(BeatFraction.Quarter))
+            music.playTone(523, music.beat(BeatFraction.Half))
+            music.playTone(523, music.beat(BeatFraction.Quarter))
+            music.playTone(392, music.beat(BeatFraction.Quarter))
+            music.playTone(523, music.beat(BeatFraction.Quarter))
+        }else if(musicItem==MusicList.music2){// 生日快乐
+            music.playTone(523, music.beat(BeatFraction.Eighth))
+            music.playTone(262, music.beat(BeatFraction.Quarter))
+            music.playTone(262, music.beat(BeatFraction.Half))
+            music.playTone(262, music.beat(BeatFraction.Whole))
+        }else if(musicItem==MusicList.music3){// 圣诞快乐
+            music.playTone(523, music.beat(BeatFraction.Eighth))
+            music.playTone(262, music.beat(BeatFraction.Quarter))
+            music.playTone(262, music.beat(BeatFraction.Half))
+            music.playTone(262, music.beat(BeatFraction.Whole))
+        }else if(musicItem==MusicList.music4){// 小星星
+            music.playTone(523, music.beat(BeatFraction.Eighth))
+            music.playTone(262, music.beat(BeatFraction.Quarter))
+            music.playTone(262, music.beat(BeatFraction.Half))
+            music.playTone(262, music.beat(BeatFraction.Whole))
         }
     }
 	/**

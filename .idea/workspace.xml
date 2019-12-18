@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="fe5410e6-f8da-4e99-8802-bb2c7b3b46fb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_locales/zh/cruise-strings.json" beforeDir="false" afterPath="$PROJECT_DIR$/_locales/zh/CruiseE-strings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pxt.json" beforeDir="false" afterPath="$PROJECT_DIR$/pxt.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_locales/zh/CruiseE-strings.json" beforeDir="false" afterPath="$PROJECT_DIR$/_locales/zh/CruiseE-strings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,14 +20,9 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="875">
-              <caret line="35" column="17" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="17" />
+            <state relative-caret-position="300">
+              <caret line="260" column="69" selection-start-line="260" selection-start-column="60" selection-end-line="260" selection-end-column="69" />
               <folding>
-                <element signature="n#PingUnit#0;n#MiniCruise#0" />
-                <element signature="n#IRList#0;n#MiniCruise#0" />
-                <element signature="n#PinList#0;n#MiniCruise#0" />
-                <element signature="n#RgbList#0;n#MiniCruise#0" />
-                <element signature="n#ColorList#0;n#MiniCruise#0" />
                 <element signature="n#!!block;n#motorRunComplex#0;n#CruiseE#0" />
               </folding>
             </state>
@@ -38,8 +33,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="411">
-                <caret line="22" column="11" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="11" />
+              <first_editor relative-caret-position="75">
+                <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
               </first_editor>
               <second_editor />
             </state>
@@ -50,7 +45,7 @@
         <entry file="file://$PROJECT_DIR$/pxt.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="325">
-              <caret line="13" column="40" lean-forward="true" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
+              <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -58,8 +53,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_locales/zh/CruiseE-strings.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="900">
-              <caret line="36" column="28" lean-forward="true" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
+            <state relative-caret-position="800">
+              <caret line="35" column="47" lean-forward="true" selection-start-line="35" selection-start-column="47" selection-end-line="35" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -77,8 +72,12 @@
       <find>MotorDirection</find>
       <find>motorRun</find>
       <find>stopAllMotor</find>
-      <find>MotorList</find>
       <find>motorRunComplex</find>
+      <find>MotorList</find>
+      <find>play</find>
+      <find>playM</find>
+      <find>forward</find>
+      <find>playMusic</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -89,9 +88,9 @@
       <list>
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/_locales/zh/MiniCruise-strings.json" />
-        <option value="$PROJECT_DIR$/main.ts" />
         <option value="$PROJECT_DIR$/_locales/zh/cruise-strings.json" />
         <option value="$PROJECT_DIR$/pxt.json" />
+        <option value="$PROJECT_DIR$/main.ts" />
         <option value="$PROJECT_DIR$/_locales/zh/CruiseE-strings.json" />
       </list>
     </option>
@@ -107,10 +106,10 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="128" />
-    <option name="y" value="80" />
-    <option name="width" value="2195" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="438" />
+    <option name="y" value="21" />
+    <option name="width" value="1225" />
     <option name="height" value="1395" />
   </component>
   <component name="ProjectView">
@@ -186,18 +185,20 @@
       <updated>1574927357799</updated>
       <workItem from="1574927359600" duration="2705000" />
       <workItem from="1574931019727" duration="247000" />
-      <workItem from="1576546310543" duration="7100000" />
+      <workItem from="1576546310543" duration="8024000" />
+      <workItem from="1576559478231" duration="38000" />
+      <workItem from="1576658946202" duration="3052000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10052000" />
+    <option name="totallyTimeSpent" value="14066000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="128" y="80" width="2195" height="1395" extended-state="0" />
+    <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1622624" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.013396375" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -210,7 +211,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="TypeScript" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.1776368" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.174727" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -228,42 +229,37 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/main.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="875">
-          <caret line="35" column="17" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="17" />
-          <folding>
-            <element signature="n#PingUnit#0;n#MiniCruise#0" />
-            <element signature="n#IRList#0;n#MiniCruise#0" />
-            <element signature="n#PinList#0;n#MiniCruise#0" />
-            <element signature="n#RgbList#0;n#MiniCruise#0" />
-            <element signature="n#ColorList#0;n#MiniCruise#0" />
-            <element signature="n#!!block;n#motorRunComplex#0;n#CruiseE#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pxt.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
-          <caret line="13" column="40" lean-forward="true" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
+          <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="411">
-            <caret line="22" column="11" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="11" />
+          <first_editor relative-caret-position="75">
+            <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/main.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="260" column="69" selection-start-line="260" selection-start-column="60" selection-end-line="260" selection-end-column="69" />
+          <folding>
+            <element signature="n#!!block;n#motorRunComplex#0;n#CruiseE#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/_locales/zh/CruiseE-strings.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="36" column="28" lean-forward="true" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
+        <state relative-caret-position="800">
+          <caret line="35" column="47" lean-forward="true" selection-start-line="35" selection-start-column="47" selection-end-line="35" selection-end-column="47" />
         </state>
       </provider>
     </entry>
