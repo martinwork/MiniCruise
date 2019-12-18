@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe5410e6-f8da-4e99-8802-bb2c7b3b46fb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_locales/zh/CruiseE-strings.json" beforeDir="false" afterPath="$PROJECT_DIR$/_locales/zh/CruiseE-strings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/main.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -17,11 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="260" column="69" selection-start-line="260" selection-start-column="60" selection-end-line="260" selection-end-column="69" />
+            <state relative-caret-position="850">
+              <caret line="294" column="62" lean-forward="true" selection-start-line="294" selection-start-column="62" selection-end-line="294" selection-end-column="62" />
               <folding>
                 <element signature="n#!!block;n#motorRunComplex#0;n#CruiseE#0" />
               </folding>
@@ -50,7 +48,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_locales/zh/CruiseE-strings.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="800">
@@ -76,8 +74,8 @@
       <find>MotorList</find>
       <find>play</find>
       <find>playM</find>
-      <find>forward</find>
       <find>playMusic</find>
+      <find>forward</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -90,8 +88,8 @@
         <option value="$PROJECT_DIR$/_locales/zh/MiniCruise-strings.json" />
         <option value="$PROJECT_DIR$/_locales/zh/cruise-strings.json" />
         <option value="$PROJECT_DIR$/pxt.json" />
-        <option value="$PROJECT_DIR$/main.ts" />
         <option value="$PROJECT_DIR$/_locales/zh/CruiseE-strings.json" />
+        <option value="$PROJECT_DIR$/main.ts" />
       </list>
     </option>
   </component>
@@ -106,7 +104,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="438" />
     <option name="y" value="21" />
     <option name="width" value="1225" />
@@ -187,12 +185,12 @@
       <workItem from="1574931019727" duration="247000" />
       <workItem from="1576546310543" duration="8024000" />
       <workItem from="1576559478231" duration="38000" />
-      <workItem from="1576658946202" duration="3052000" />
+      <workItem from="1576658946202" duration="3519000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14066000" />
+    <option name="totallyTimeSpent" value="14533000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
@@ -246,20 +244,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="260" column="69" selection-start-line="260" selection-start-column="60" selection-end-line="260" selection-end-column="69" />
-          <folding>
-            <element signature="n#!!block;n#motorRunComplex#0;n#CruiseE#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_locales/zh/CruiseE-strings.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="800">
           <caret line="35" column="47" lean-forward="true" selection-start-line="35" selection-start-column="47" selection-end-line="35" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="294" column="62" lean-forward="true" selection-start-line="294" selection-start-column="62" selection-end-line="294" selection-end-column="62" />
+          <folding>
+            <element signature="n#!!block;n#motorRunComplex#0;n#CruiseE#0" />
+          </folding>
         </state>
       </provider>
     </entry>
