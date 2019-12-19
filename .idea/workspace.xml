@@ -18,8 +18,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="850">
-              <caret line="294" column="62" lean-forward="true" selection-start-line="294" selection-start-column="62" selection-end-line="294" selection-end-column="62" />
+            <state relative-caret-position="300">
+              <caret line="299" column="63" lean-forward="true" selection-start-line="299" selection-start-column="63" selection-end-line="299" selection-end-column="63" />
               <folding>
                 <element signature="n#!!block;n#motorRunComplex#0;n#CruiseE#0" />
               </folding>
@@ -185,18 +185,17 @@
       <workItem from="1574931019727" duration="247000" />
       <workItem from="1576546310543" duration="8024000" />
       <workItem from="1576559478231" duration="38000" />
-      <workItem from="1576658946202" duration="3519000" />
+      <workItem from="1576658946202" duration="4239000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14533000" />
+    <option name="totallyTimeSpent" value="15253000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.013396375" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.013396375" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -209,7 +208,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="TypeScript" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.174727" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.174727" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -253,8 +252,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="294" column="62" lean-forward="true" selection-start-line="294" selection-start-column="62" selection-end-line="294" selection-end-column="62" />
+        <state relative-caret-position="300">
+          <caret line="299" column="63" lean-forward="true" selection-start-line="299" selection-start-column="63" selection-end-line="299" selection-end-column="63" />
           <folding>
             <element signature="n#!!block;n#motorRunComplex#0;n#CruiseE#0" />
           </folding>
