@@ -110,7 +110,7 @@ namespace CruiseE {
         //% block="Little stars"
         music4 = 4,
     }
-    let neoStrip = neopixel.create(DigitalPin.P5, 4, NeoPixelMode.RGB);
+    let neoStrip = neopixel.create(DigitalPin.P12, 4, NeoPixelMode.RGB);
 
     /**
      * Stop all motor
@@ -429,25 +429,25 @@ namespace CruiseE {
     //% blockId="mini_cruise_patrol" block="Line Tracer Detects %patrol"
     export function readPatrol(patrol: Patrol): boolean {
         if (patrol == Patrol.white_white) {
-            if (pins.digitalReadPin(DigitalPin.P12) == 1 && pins.digitalReadPin(DigitalPin.P11) == 1) {
+            if (pins.digitalReadPin(DigitalPin.P10) == 1 && pins.digitalReadPin(DigitalPin.P9) == 1) {
                 return true;
             } else {
                 return false;
             }
         } else if (patrol == Patrol.white_black) {
-            if (pins.digitalReadPin(DigitalPin.P12) == 1 && pins.digitalReadPin(DigitalPin.P11) == 0) {
+            if (pins.digitalReadPin(DigitalPin.P10) == 1 && pins.digitalReadPin(DigitalPin.P9) == 0) {
                 return true;
             } else {
                 return false;
             }
         } else if (patrol == Patrol.black_white) {
-            if (pins.digitalReadPin(DigitalPin.P12) == 0 && pins.digitalReadPin(DigitalPin.P11) == 1) {
+            if (pins.digitalReadPin(DigitalPin.P10) == 0 && pins.digitalReadPin(DigitalPin.P9) == 1) {
                 return true;
             } else {
                 return false;
             }
         } else if (patrol == Patrol.black_black) {
-            if (pins.digitalReadPin(DigitalPin.P12) == 0 && pins.digitalReadPin(DigitalPin.P11) == 0) {
+            if (pins.digitalReadPin(DigitalPin.P10) == 0 && pins.digitalReadPin(DigitalPin.P9) == 0) {
                 return true;
             } else {
                 return false;
