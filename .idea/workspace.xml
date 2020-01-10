@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe5410e6-f8da-4e99-8802-bb2c7b3b46fb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/ir.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ir.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pxt.json" beforeDir="false" afterPath="$PROJECT_DIR$/pxt.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_locales/zh/CruiseE-strings.json" beforeDir="false" afterPath="$PROJECT_DIR$/_locales/zh/CruiseE-strings.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -45,8 +44,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/shims.d.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="12" column="53" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="53" />
+            <state relative-caret-position="150">
+              <caret line="6" column="28" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -72,7 +71,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pxt.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="500">
@@ -81,11 +80,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_locales/zh/CruiseE-strings.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="5" column="39" lean-forward="true" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
+            <state relative-caret-position="50">
+              <caret line="2" column="44" lean-forward="true" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -113,9 +112,10 @@
       <find>P5</find>
       <find>P12</find>
       <find>Pins</find>
-      <find>init</find>
       <find>onPressEvent</find>
       <find>ir_init</find>
+      <find>init</find>
+      <find>Cruise_IR</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\Administrator\Desktop\MiniCruise</dir>
@@ -131,10 +131,10 @@
         <option value="$PROJECT_DIR$/_locales/zh/MiniCruise-strings.json" />
         <option value="$PROJECT_DIR$/_locales/zh/cruise-strings.json" />
         <option value="$PROJECT_DIR$/main.ts" />
-        <option value="$PROJECT_DIR$/_locales/zh/CruiseE-strings.json" />
         <option value="$PROJECT_DIR$/shims.d.ts" />
         <option value="$PROJECT_DIR$/ir.cpp" />
         <option value="$PROJECT_DIR$/pxt.json" />
+        <option value="$PROJECT_DIR$/_locales/zh/CruiseE-strings.json" />
       </list>
     </option>
   </component>
@@ -223,12 +223,12 @@
       <workItem from="1576658946202" duration="4239000" />
       <workItem from="1576720708725" duration="23000" />
       <workItem from="1578453163866" duration="375000" />
-      <workItem from="1578626548788" duration="4036000" />
+      <workItem from="1578626548788" duration="4488000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19687000" />
+    <option name="totallyTimeSpent" value="20139000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
@@ -285,13 +285,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_locales/zh/CruiseE-strings.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="39" lean-forward="true" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -309,17 +302,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shims.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="53" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pxt.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="500">
           <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shims.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="28" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_locales/zh/CruiseE-strings.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="44" lean-forward="true" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
         </state>
       </provider>
     </entry>
