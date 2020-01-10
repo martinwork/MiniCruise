@@ -2,9 +2,9 @@
 
 
 
-    //% color="#31C7D5" weight=19
+    //% color="#1B80C4" weight=19
     //% icon="\uf1eb"
-declare namespace Cruise_IR {
+declare namespace CruiseE_IR {
 
     /**
      * button pushed.
