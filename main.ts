@@ -112,21 +112,6 @@ namespace CruiseE {
     }
     let neoStrip = neopixel.create(DigitalPin.P12, 4, NeoPixelMode.RGB);
     /**
-     * button pushed.
-     */
-    //% weight=45
-    //% blockId=mini_ir_received_left_event
-    //% block="on |%btn| button pressed" shim=Mbit_IR::onPressEvent
-    function onPressEvent(btn: RemoteButton, body: () => void): void;
-
-    /**
-     * initialises local variablesssss
-     */
-    //% weight=46
-    //% blockId=mini_ir_init
-    //% block="connect ir receiver to %pin" shim=Mbit_IR::init
-    function init(pin: Pins): void;
-    /**
      * Stop all motor
      */
     //% weight=98
