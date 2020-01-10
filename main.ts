@@ -33,7 +33,7 @@ enum Patrol {
 }
 
 //% weight=100 color=#1B80C4 icon="\uf0e7"
-declare namespace CruiseE {
+namespace CruiseE {
     export enum PingUnit {
         //% block="cm"
         Centimeters,
@@ -111,21 +111,6 @@ declare namespace CruiseE {
         music4 = 4,
     }
     let neoStrip = neopixel.create(DigitalPin.P12, 4, NeoPixelMode.RGB);
-
-    /**
-     * button pushed.
-     */
-    //% blockId=mini_ir_received_left_event
-    //% block="on |%btn| button pressed" shim=Mbit_IR::onPressEvent
-    function onPressEvent(btn: RemoteButton, body: () => void): void;
-
-    /**
-     * initialises local variablesssss
-     */
-    //% blockId=mini_ir_init
-    //% block="connect ir receiver to %pin" shim=Mbit_IR::init
-    function init(pin: Pins): void;
-
     /**
      * Stop all motor
      */
