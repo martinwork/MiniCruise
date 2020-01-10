@@ -53,10 +53,10 @@ enum class RemoteButton {
 
 //% color=50 weight=19
 //% icon="\uf1eb"
-namespace Mbit_IR { 
+namespace Mbit_IR {
   map<RemoteButton, vA> actions;
   map<RemoteButton, uint32_t> lastact;
-  Timer tsb; 
+  Timer tsb;
   uint8_t buf[32];
   uint32_t now;
   ReceiverIR *rx;
@@ -65,7 +65,7 @@ namespace Mbit_IR {
   /**
   * button pushed.
   */
-  //% blockId=ir_received_left_event
+  //% blockId=mini_ir_received_left_event
   //% block="on |%btn| button pressed"
   void onPressEvent(RemoteButton btn, Action body) {
     //if(actions.find(btn) == actions.end()) actions[btn] = new vector();
@@ -80,12 +80,12 @@ namespace Mbit_IR {
     now = tsb.read_ms();
     if(now - lastact[(RemoteButton)buf[2]] < 100) return;
     lastact[(RemoteButton)buf[2]] = now;
-    cA(actions[(RemoteButton)buf[2]]); 
+    cA(actions[(RemoteButton)buf[2]]);
   }
 
   void monitorIR(){
     while(1){
-      while(rx->getState() != ReceiverIR::Received){ 
+      while(rx->getState() != ReceiverIR::Received){
         uBit.sleep(50);
       }
       onReceivable();
@@ -95,7 +95,7 @@ namespace Mbit_IR {
   /**
   * initialises local variablesssss
   */
-  //% blockId=ir_init
+  //% blockId=mini_ir_init
   //% block="connect ir receiver to %pin"
   void init(Pins pin){
     rx = new ReceiverIR((PinName)pin);
