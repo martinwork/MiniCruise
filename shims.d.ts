@@ -2,7 +2,7 @@
 
 
 
-    //% color="#1B80C4" weight=19
+    //% color="#1B80C4" weight=100
     //% icon="\uf1eb"
 declare namespace CruiseE_IR {
 
