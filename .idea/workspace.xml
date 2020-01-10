@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe5410e6-f8da-4e99-8802-bb2c7b3b46fb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_locales/zh/CruiseE-strings.json" beforeDir="false" afterPath="$PROJECT_DIR$/_locales/zh/CruiseE-strings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shims.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shims.d.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -43,7 +41,7 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/shims.d.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="175">
@@ -73,11 +71,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_locales/zh/CruiseE-strings.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="1" column="22" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="22" />
+            <state relative-caret-position="125">
+              <caret line="5" column="39" lean-forward="true" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -120,8 +118,8 @@
         <option value="$PROJECT_DIR$/_locales/zh/cruise-strings.json" />
         <option value="$PROJECT_DIR$/pxt.json" />
         <option value="$PROJECT_DIR$/main.ts" />
-        <option value="$PROJECT_DIR$/_locales/zh/CruiseE-strings.json" />
         <option value="$PROJECT_DIR$/shims.d.ts" />
+        <option value="$PROJECT_DIR$/_locales/zh/CruiseE-strings.json" />
       </list>
     </option>
   </component>
@@ -210,12 +208,12 @@
       <workItem from="1576658946202" duration="4239000" />
       <workItem from="1576720708725" duration="23000" />
       <workItem from="1578453163866" duration="375000" />
-      <workItem from="1578626548788" duration="2618000" />
+      <workItem from="1578626548788" duration="2645000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18269000" />
+    <option name="totallyTimeSpent" value="18296000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
@@ -279,13 +277,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_locales/zh/CruiseE-strings.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" column="22" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
@@ -300,6 +291,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_locales/zh/CruiseE-strings.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="39" lean-forward="true" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
         </state>
       </provider>
     </entry>
