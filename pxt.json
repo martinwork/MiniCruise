@@ -10,8 +10,6 @@
     "icon": "icon.png",
     "files": [
         "README.md",
-        "shims.d.ts",
-        "enums.d.ts",
         "ir.cpp",
         "ReceiverIR.cpp",
         "ReceiverIR.h",
