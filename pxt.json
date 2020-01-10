@@ -9,9 +9,16 @@
     "license": "MIT",
     "icon": "icon.png",
     "files": [
-      "README.md",
-      "main.ts",
-	  "_locales/zh/CruiseE-strings.json"
+        "README.md",
+        "main.ts",
+        "enums.d.ts",
+        "ir.cpp",
+        "ReceiverIR.cpp",
+        "ReceiverIR.h",
+        "RemoteIR.h",
+        "TransmitterIR.cpp",
+        "TransmitterIR.h",
+        "_locales/zh/CruiseE-strings.json"
     ],
     "testFiles": [
         "test.ts"

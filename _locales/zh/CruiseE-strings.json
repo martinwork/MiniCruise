@@ -1,4 +1,6 @@
 {
+  "CruiseE.onPressEvent|block": "当|%btn|按钮按下",
+  "CruiseE.init|block": "将红外接收器连接到 %pin",
   "CruiseE.PingUnit.Centimeters|block": "厘米",
   "CruiseE.PingUnit.MicroSeconds|block": "微秒",
   "CruiseE.IRList.front|block": "前置红外",
