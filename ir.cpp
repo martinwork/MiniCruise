@@ -3,7 +3,7 @@
 #include <vector>
 #include "ReceiverIR.h"
 using namespace pxt;
-typedef vector<Action> vA;
+ typedef vector<Action> vA; // space avoids https://github.com/microsoft/pxt-microbit/issues/4812
 
 enum class Pins{
   P0=  3,
@@ -51,7 +51,7 @@ enum class RemoteButton {
 	  NUM9 = 0x4A
 };
 
-//% color=50 weight=99
+//% color=#1B80C4 weight=99
 //% icon="\uf1eb"
 namespace Mbit_IR {
   map<RemoteButton, vA> actions;
