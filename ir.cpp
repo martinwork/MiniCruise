@@ -3,7 +3,7 @@
 #include <vector>
 #include "ReceiverIR.h"
 using namespace pxt;
-typedef vector<Action> vA;
+ typedef vector<Action> vA; // space avoids https://github.com/microsoft/pxt-microbit/issues/4812
 
 enum class Pins{
   P0=  3,
@@ -51,9 +51,8 @@ enum class RemoteButton {
 	  NUM9 = 0x4A
 };
 
-//% color=50 weight=99
-//% icon="\uf1eb"
-namespace Mbit_IR {
+//%
+namespace CruiseE_IR {
   map<RemoteButton, vA> actions;
   map<RemoteButton, uint32_t> lastact;
   Timer tsb;
@@ -62,11 +61,10 @@ namespace Mbit_IR {
   ReceiverIR *rx;
   RemoteIR::Format fmt = RemoteIR::UNKNOWN;
 
-  /**
+  /*
   * button pushed.
   */
-  //% blockId=mini_ir_received_left_event
-  //% block="on |%btn| button pressed"
+  //%
   void onPressEvent(RemoteButton btn, Action body) {
     //if(actions.find(btn) == actions.end()) actions[btn] = new vector();
     actions[btn].push_back(body);
@@ -92,11 +90,10 @@ namespace Mbit_IR {
     }
   }
 
-  /**
+  /*
   * initialises local variablesssss
   */
-  //% blockId=mini_ir_init
-  //% block="connect ir receiver to %pin"
+  //%
   void init(Pins pin){
     rx = new ReceiverIR((PinName)pin);
     tsb.start(); //interrupt timer for debounce

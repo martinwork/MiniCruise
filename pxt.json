@@ -1,28 +1,27 @@
 {
     "name": "CruiseE",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "CruiseE Education Robot is developed and maintained by Harbin Aosong Robot Technology Co., Ltd (ALSRobot). 克鲁斯教育机器人由哈尔滨奥松机器人科技股份有限公司开发、维护",
+    "license": "MIT",
     "dependencies": {
         "core": "*",
         "neopixel": "github:microsoft/pxt-neopixel#v0.6.12"
     },
-    "license": "MIT",
-    "icon": "icon.png",
     "files": [
         "README.md",
         "shims.d.ts",
         "enums.d.ts",
+        "ir.ts",
         "ir.cpp",
         "ReceiverIR.cpp",
         "ReceiverIR.h",
         "RemoteIR.h",
-        "TransmitterIR.cpp",
-        "TransmitterIR.h",
         "main.ts",
         "_locales/zh/CruiseE-strings.json"
     ],
     "testFiles": [
         "test.ts"
     ],
-    "public": true
+    "public": true,
+    "icon": "icon.png"
 }
