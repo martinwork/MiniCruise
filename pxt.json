@@ -1,6 +1,6 @@
 {
     "name": "CruiseE",
-    "version": "1.0.2",
+    "version": "1.1.0",
     "description": "CruiseE Education Robot is developed and maintained by Harbin Aosong Robot Technology Co., Ltd (ALSRobot). 克鲁斯教育机器人由哈尔滨奥松机器人科技股份有限公司开发、维护",
     "license": "MIT",
     "dependencies": {
